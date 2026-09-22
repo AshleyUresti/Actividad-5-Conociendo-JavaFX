@@ -91,5 +91,18 @@ En resumen, JavaFX además de ser una herramienta gráfica, también es una apli
 
 ---
 
+### Programa de Registro de Estudiantes
 
+Para esta actividad, primero se crea la clase Estudiantes, con sus atributos "nombreEstudiante" y "matriculaEstudiante", se inicializan en el constructor y se agregan métodos get y set, además de sobreescribir el método toString para imprimir los datos de los estudiantes.
 
+Código Estudiante.java:
+
+<img width="1277" height="727" alt="image" src="https://github.com/user-attachments/assets/39790b8d-b673-4055-ad47-86f0df6e2192" />
+
+Salida:
+<img width="1265" height="730" alt="image" src="https://github.com/user-attachments/assets/b8cb056e-9ffe-49a2-8f2c-3e25f4b1c65c" />
+
+A continuación, hay que actualizar el Main.java por una versión con interfaz JavaFX:
+- se crean 2 TextField de nombre y matrícula dentro de un VBox
+- se agrega un Button con setOnAction()
+- dentro del evento, se lee con getText() cada TextField y se crea el objeto Estudiante
